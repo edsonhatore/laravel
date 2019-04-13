@@ -28,7 +28,7 @@ node('php7'){
     }
 
     stage('Build'){
-        sh 'sudo composer install --prefer-dist --no-dev --ignore-platform-reqs'
+        sh 'composer install --prefer-dist --no-dev --ignore-platform-reqs'
     }
 
     stage('Docker Build') {
